@@ -2,10 +2,10 @@
 
 namespace Core.Specifications;
 
-public class DesenvolvedorRendaEstimadaSpec : BaseSpecification<Desenvolvedor>
+public class DesenvolvedorRendaEstimadaSpec : BaseSpecification<Developer>
 {
-    public DesenvolvedorRendaEstimadaSpec(decimal renda) : base(x => x.RendaEstimada > renda)
+    public DesenvolvedorRendaEstimadaSpec(decimal renda) : base(x => x.EstimatedIncome > renda)
     {
-        AddOrderByDescending(x => x.RendaEstimada);
+        AddOrderByDescending(x => x.EstimatedIncome);
     }
 }

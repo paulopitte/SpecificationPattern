@@ -2,10 +2,10 @@
 
 namespace Core.Specifications;
 
-public class DesenvolvedorExperienciaEnderecoSpec : BaseSpecification<Desenvolvedor>
+public class DesenvolvedorExperienciaEnderecoSpec : BaseSpecification<Developer>
 {
-    public DesenvolvedorExperienciaEnderecoSpec(int anos) : base(x => x.AnosExperiencia > anos)
+    public DesenvolvedorExperienciaEnderecoSpec(int anos) : base(x => x.YearsExperience > anos)
     {
-        AddInclude(x => x.Endereco);
+        AddInclude(x => x.Address);
     }
 }

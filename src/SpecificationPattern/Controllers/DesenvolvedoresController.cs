@@ -9,8 +9,8 @@ namespace ApiDev.Controllers;
 [ApiController]
 public class DesenvolvedoresController : ControllerBase
 {
-    public readonly IGenericRepository<Desenvolvedor> _repository;
-    public DesenvolvedoresController(IGenericRepository<Desenvolvedor> repository)
+    public readonly IGenericRepository<Developer> _repository;
+    public DesenvolvedoresController(IGenericRepository<Developer> repository)
     {
         _repository = repository;
     }
